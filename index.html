@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Css Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">    
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">    
+    <link rel="stylesheet" type="text/css" href="css/main.css">  
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+
+    <!-- Css Files -->
+    <title>SMS Dashboard</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Side Menu -->
+                <div class="col-md-2 col-sm-2 col-2 d-md-block d-sm-block d-none  align-top " id="side-menu">
+
+                    <h1><i class="fas fa-location-arrow"></i> <span  class="d-xl-inline d-lg-inline d-md-none d-sm-none d-none">Navigation</span></h1>
+                    <hr>
+                    <ul class="">
+                        <li class="link active mt-5">
+                            <a href="#">
+                                <i class="mr-1 fas fa-cogs"></i>
+                                <span  class="d-xl-inline d-lg-inline d-md-inline d-sm-none d-none">
+                                    Dashboard
+                                </span>
+                            </a>
+                        </li>
+                     
+                        <li class="link">
+                            <a href="#collapse-users" data-toggle="collapse" aria-controls="collapse-users">
+                                <i class="mr-2 fas fa-users"></i>
+                                <span  class="d-xl-inline d-lg-inline d-md-inline d-sm-none d-none">Users
+                                </span>
+                            </a>
+                            <ul class="collapse" id="collapse-users">
+                                <li class="link">
+                                    <a href="">
+                                        <i class="fas fa-users-cog"></i>
+                                        <span class="d-xl-inline d-lg-inline d-md-inline d-sm-none d-none">
+                                            See All Users    
+                                        </span>
+                                        
+                                    </a>
+                                </li>
+                                <li class="link">
+                                   <a href="">
+                                        <i class="fas fa-plus"></i>
+                                       <span class="d-xl-inline d-lg-inline d-md-inline d-sm-none d-none">
+                                       Add New User
+                                   </span>  
+                                   </a>
+                               </li>
+                            </ul>
+                            
+                        </li>
+                     
+                        <li class="link">
+                            <a href="#">
+                                <i class="mr-2 fas fa-comment-alt"></i>
+                                <span  class="d-xl-inline d-lg-inline d-md-inline d-sm-none d-none">
+                                    Posts
+                                </span>
+                            </a>
+                            
+                        </li>
+                     
+                        <li class="link">
+                            <a href="#">
+                                <i class="mr-1 fas fa-comments"></i>
+                               <span  class="d-xl-inline d-lg-inline d-md-inline d-sm-none d-none">
+                                   Comments
+                               </span> 
+                            </a>
+                        </li>
+                     
+                        <li class="link setting-btn ">
+                            <a href="#">
+                                <i class="mr-2 fas fa-user-cog" aria-hidden="true"></i>
+                               <span class="d-xl-inline d-lg-inline d-md-inline  d-sm-none d-none"> Settings</span>
+                            </a>
+                            
+                        </li>
+                    </ul>
+
+                </div>        
+                <!-- main content area -->
+                <div class="col-md-10 col-sm-10 col-12  align-top container-fluid" id="main">
+
+                    <div class="navbar navbar-expand navbar-light text-white bg-info ">
+                        <a class="navbar-brand text-white d-md-none d-sm-none d-none d-lg-inline" href="#"><i class="fas fa-feather-alt"></i> SMS2 Dashboard</a>
+                             <button id="nav-btn" type="button" class="d-xl-none d-lg-none d-md-inline d-sm-inline d-inline" type="button" >
+                                    <span class="navbar-toggler-icon"></span>
+                          </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item d-lg-inline d-md-none d-sm-none d-none">
+                                    <img src="https://placehold.it/35x35" class="rounded-circle">
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link text-white" href="#">
+                                        Welcome ,
+                                       
+                                        Admin
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">
+                                        <i class="text-white fas fa-sign-out-alt"></i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                      </div>  
+                    </div>
+        
+   
+                </div> <!-- Main -->
+            </div> <!-- Row -->
+        </div> <!-- Container Fluid -->
+
+        <!-- Js Files -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/all.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                 $('#nav-btn').on('click',function(){
+                    $('#side-menu').toggleClass('d-none');
+                    $('#main').toggleClass('col-12');
+                    $('#main').toggleClass('col-10');
+                });
+            });
+        </script>
+    </body>
+</html>

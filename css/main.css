@@ -1,0 +1,93 @@
+html,body{
+font-family: "open sans", "Helvitca Neue",Helvitca,Arial, sans-serif;
+background-color: #f3f3f4;
+color:#676a6c;
+height: 100%;
+}
+#side-menu{
+    background-color: #2f4050;
+    /*padding: 0px;*/
+}
+#side-menu h1{
+    color:#aec4f9;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 25px;
+}
+.box{
+    border: 1px dotted red;
+}
+.align-top{
+    vertical-align: top !important;
+}
+.container-fluid{
+    height: 100% !important;
+    padding: 0px !important;
+}
+.row{
+    height:  100% !important;
+    margin: 0px !important;
+}
+#side-menu{
+    height:  100%;
+    padding: 0;
+}
+#side-menu .active a{
+    color: #fff;
+    background-color: #293846;
+}
+#side-menu .setting-btn{
+    background-color: #1ab394;
+}
+#side-menu .setting-btn a{
+    color: #fff;
+}
+#side-menu .setting-btn a:hover{
+    background-color: #1ab394;
+}
+#side-menu .collapse li{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+#side-menu .collapse a{
+    color: #9fb1c2;
+    font-size: 13px;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#side-menu .collapse a:hover{
+    color: #fff;
+}
+#side-menu .collapse{
+    border-left: 4px solid #1ab394;
+    background-color:#293846;
+}
+#side-menu .link > ul > li{
+    padding-bottom: 10px
+}
+
+#main{
+    height:  100%;
+}
+
+#side-menu ul {
+    list-style: none;
+    margin: 0px !important;
+    padding:0px !important;
+}
+
+#side-menu a{
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #9fb1c2;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+
+}
+
+#side-menu a:hover{
+    background-color: #293846;
+
+}
